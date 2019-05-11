@@ -2,9 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>后台页面</title>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.css">
+    <link rel="stylesheet" href="lib/nprogress/nprogress.css">
 </head>
 <body>
+  <!--侧边导航-->
+  <div class="aside">
+      <!--标题-->
+      <div class="title">
+          <a href="#">后台管理系统</a>
+      </div>
+      <!--用户信息-->
+      <div class="userinfo">
+          <img src="images/default.png" alt="">
+          <p>超级管理员</p>
+      </div>
+      <!--导航-->
+      <div class="nav">
+          <ul>
+              <li>
+                  <a href="#" class="current"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a>
+              </li>
+              <li>
+                  <a href="#" class="category"><i class="glyphicon glyphicon-list "></i><span>分类管理</span></a>
+                  <div class="child" style="display: none">
+                      <a href="#">一级分类</a>
+                      <a href="#">二级分类</a>
+                  </div>
+              </li>
+              <li>
+                  <a href="#"><i class="glyphicon glyphicon-tags"></i><span>商品管理</span> </a>
+              </li>
+          </ul>
+      </div>
+  </div>
 
+  <!--左边主体部分-->
+  <div class="main">
+      <!--头部-->
+      <div class="topbar">
+          <a href="#" class="pull-left icon-menu"><i class="glyphicon glyphicon-align-justify"></i></a>
+          <a href="#" class="pull-right icon-logout"><i class="glyphicon glyphicon-log-out"></i></a>
+      </div>
+      <!--内容部分-->
+      <div class="container-fluid">
+          <!--面包屑导航-->
+          <ol class="breadcrumb mt30">
+              <li><a href="#">管理系统</a></li>
+              <li><a href="#">首页</a></li>
+          </ol>
+      </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="Modal">
+      <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                  <p>One fine body&hellip;</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
+<script src="lib/nprogress/nprogress.js"></script>
+<script src="js/login.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
