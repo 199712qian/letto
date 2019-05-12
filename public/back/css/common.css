@@ -166,3 +166,9 @@ ul{
     height: 400px;
     background-color: #1b6d85;
 }
+.table.table-bordered thead  th,
+table.table-bordered tbody tr td
+{
+    text-align: center;
+    vertical-align: middle;
+}

@@ -56,7 +56,7 @@ $(function () {
 
     //点击模态框按钮，模态框出现
     $(".icon-logout").on("click",function () {
-        $('#Modal').modal('show')
+        $('#Modal').modal('show');
 
     })
 
