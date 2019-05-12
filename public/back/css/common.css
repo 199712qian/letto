@@ -1,3 +1,7 @@
+.bg_color
+{
+    background-color: #222D32;
+}
 
 .panel-title
 {
@@ -134,7 +138,7 @@ ul{
 .main
 {
     height: 1000px;
-    background-color: pink;
+  
     padding-top: 50px;
     padding-left: 180px;
     transition: all 1s;
@@ -151,4 +155,14 @@ ul{
 .mt30 a:hover
 {
     text-decoration: none;
+}
+.red
+{
+    color: #A94442;
+}
+.echarts_1,.echarts_2
+{
+    width: 48%;
+    height: 400px;
+    background-color: #1b6d85;
 }
