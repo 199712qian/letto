@@ -110,8 +110,9 @@
 
       {{ each rows v i}}
       <tr>
-          <td>{{ i+1+(page-1)*size }}</td>
-          <td>{{ v.categoryName}}</td>
+          <!-- 当前页的个数 + 前面的页数 * 每页条数 -->
+          <td>{{ i + 1 + (page - 1)*size }}</td>
+          <td>{{ v.categoryName }}</td>
       </tr>
       {{ /each }}
   </script>
